@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
+
 
 const Footer = () => {
 
@@ -31,6 +33,33 @@ const Footer = () => {
           ))
           }
         </nav>
+
+        {/* Social media icons */}
+        <div className='flex flex-wrap justify-center space-x-4 mt-6'>
+          {
+            [
+              { icon: <FaFacebook />, link: "https://www.facebook.com/tarun.kaushik.3511041/" },
+            { icon: <FaTwitter />, link: "https://twitter.com/CodingMaster6?s=09" },
+            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/tarun-kaushik-553b441a4" },
+            { icon: <FaInstagram />, link: "https://www.instagram.com/coding_.master/" },
+            { icon: <FaYoutube />, link: "https://www.youtube.com/codingmasteryt" },
+            ].map((item, index) => (
+              <a 
+              className="text-xl hover:text-purple-500 transition-transform transform hover:scale-110" 
+              href={item.link} 
+              target="_blank"
+              key={index}>
+                {item.icon}
+              </a>
+            ))
+          }
+        </div>
+
+        {/* Copyright Text */}
+        <p className='text-sm text-gray-400 mt-6'>
+        © 2025 Ravi Singh. All rights reserved.
+        </p>
+
       </div>
     </footer>
   )
