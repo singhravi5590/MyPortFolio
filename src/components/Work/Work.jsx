@@ -13,7 +13,7 @@ const Work = () => {
   }
 
   return (
-    <section id='work' className='py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans relative'>
+    <section id='projects' className='py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans relative'>
 
       {/* Section title */}
       <div className='text-center mb-16 '>
